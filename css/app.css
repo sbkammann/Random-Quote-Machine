@@ -1,0 +1,24 @@
+#quote-box{
+  height: 290px;
+  width: 450px;
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+}
+#text{
+
+}
+#author{
+
+}
+#new-quote{
+  position: relative;
+  top:225px;
+  left: 330px;
+  height: 35px;
+  width: 90px;
+}
+#tweet-quote{
+
+}
