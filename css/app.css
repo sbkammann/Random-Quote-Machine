@@ -6,11 +6,17 @@
   margin-right: auto;
   margin-top: 200px;
 }
+#textWrapper{
+  
+}
 #text{
-
+  position: relative;
+  top:125px;
+  left: 50px;
+  color: white;
 }
 #author{
-
+  color: white;
 }
 #new-quote{
   position: relative;
@@ -20,5 +26,8 @@
   width: 90px;
 }
 #tweet-quote{
-
+  color: white;
+  position: relative;
+  top:225px;
+  left: -60px;
 }
