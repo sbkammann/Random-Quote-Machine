@@ -5,29 +5,83 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 200px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
 }
-#textWrapper{
-  
+#textBox{
+  height: 57%;
+  width: 100%;
+  /* background-color: green; */
+}
+#authorBox{
+  height: 10%;
+  width: 100%;
+  /* background-color: red; */
+}
+#btnBox{
+  height: 33%;
+  width: 100%;
+  /* background-color: blue; */
 }
 #text{
-  position: relative;
-  top:125px;
-  left: 50px;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  text-justify: auto;
   color: white;
 }
 #author{
+  position: relative;
+  /* top:0px; */
+  margin-top:10px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  /* left: 50px; */
   color: white;
 }
 #new-quote{
   position: relative;
-  top:225px;
+  top:33%;
   left: 330px;
   height: 35px;
   width: 90px;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  border-radius: 25px;
+  font-family: 'Fredoka One', cursive;
 }
 #tweet-quote{
   color: white;
   position: relative;
-  top:225px;
-  left: -60px;
+  top:33%;
+  right: 60px;
+}
+.font1{
+  font-family: 'Satisfy', cursive;
+}
+.font2{
+  font-family: 'Great Vibes', cursive;
+}
+.font3{
+  font-family: 'Sacramento', cursive;
+}
+.font4{
+  font-family: 'Tangerine', cursive;
+}
+.font5{
+  font-family: 'Marck Script', cursive;
+}
+.font6{
+  font-family: 'Yellowtail', cursive;
+}
+.font7{
+  font-family: 'Playball', cursive;
+}
+.font8{
+  font-family: 'Parisienne', cursive;
 }
