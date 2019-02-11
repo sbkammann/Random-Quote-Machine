@@ -12,17 +12,14 @@
 #textBox{
   height: 57%;
   width: 100%;
-  /* background-color: green; */
 }
 #authorBox{
   height: 10%;
   width: 100%;
-  /* background-color: red; */
 }
 #btnBox{
   height: 33%;
   width: 100%;
-  /* background-color: blue; */
 }
 #text{
   padding-top: 50px;
