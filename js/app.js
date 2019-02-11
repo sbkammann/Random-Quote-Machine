@@ -11,7 +11,7 @@ const quotes = [["Don\'t cry because it\'s over, smile because it happened." , "
 ["You only live once, but if you do it right, once is enough.","Mae West"],
 ["Be the change that you wish to see in the world.","Mahatma Gandhi"],
 ["In three words I can sum up everything I've learned about life: it goes on.","Robert Frost"],
-["If you want to know what a man's like, take a good look at how he treats his inferiors, not his equals.","J.K. Rowling, Harry Potter and the Goblet of Fire"],
+["If you want to know what a man's like, take a good look at how he treats his inferiors, not his equals.","J.K. Rowling"],
 ["Don’t walk in front of me… I may not follow. Don’t walk behind me… I may not lead. Walk beside me… just be my friend","Albert Camus"],
 ["Friendship ... is born at the moment when one man says to another \"What! You too? I thought that no one but myself . . .\"","C.S. Lewis"],
 ["No one can make you feel inferior without your consent.","Eleanor Roosevelt"],
@@ -27,17 +27,25 @@ const quotes = [["Don\'t cry because it\'s over, smile because it happened." , "
 ["To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.","Ralph Waldo Emerson"],
 ["We accept the love we think we deserve.","Stephen Chbosky"],
 ["Insanity is doing the same thing, over and over again, but expecting different results.","Narcotics Anonymous"],
-["I believe that everything happens for a reason. People change so that you can learn to let go, things go wrong so that you appreciate them when they're right, you believe lies so you eventually learn to trust no one but yourself, and sometimes good things fall apart so better things can fall together.","Marilyn Monroe"]
 ];
 const text = document.getElementById('text');
 const author = document.getElementById('author');
-
+let i = Math.floor(Math.random()*quotes.length);
+text.textContent = quotes[i][0];
+author.textContent = `- ${quotes[i][1]}`;
 
 const btn = document.getElementById('new-quote');
 btn.addEventListener('click', nextQuote);
-let i = 0;
+let j=true;
+let randNum;
 function nextQuote() {
+
+  text.classList.remove('.animated');
+  i = Math.floor(Math.random()*quotes.length);
   text.textContent = quotes[i][0];
-  author.textContent = quotes[i][1];
-  i++;
+  author.textContent = `- ${quotes[i][1]}`;
+  randNum= Math.floor((Math.random()*4)+1) //1-8
+  text.setAttribute("class", `font${randNum} animated${j}`);
+
+  j=!j;
 }
